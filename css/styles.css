@@ -1,0 +1,215 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: #e0e9ee ;*/
+    
+}
+body{
+    margin: auto;
+}
+/* Start Header*/
+header {
+    background-color: #949cb1;
+    width: auto;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.log {
+    height: 80px;
+}
+header img {
+    width: 80px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+    /* Puedes ajustar el espacio entre los elementos aquí */
+.nav_pages {  
+    margin-right: 20px;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+header ul a {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px; /* Ajusta el margen entre los elementos <li> */
+    font-size: 18px;
+}
+
+header ul a:hover {
+    color: #0cbb89;
+}
+
+/* End Header*/
+
+
+/* Start Main*/ 
+.main_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 10px 10px;
+}
+
+.main_background {
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex; /* Agregamos flex para controlar los elementos internos */
+}
+
+.main_img {
+    flex: 1; /* Hace que ocupe todo el espacio disponible */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Main Purpose */
+.main_purpose {
+    flex: 1; /* Hace que ocupe todo el espacio disponible */
+    max-width: 50%; /* ajusta según tus necesidades */
+    margin-left: 20px; /* Ajusta el espacio entre las dos secciones */
+    
+}
+
+.main_purpose h1 {
+    color: #333;
+
+}
+
+.main_paragraph {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Nueva sección "documents" */
+.documents {
+    text-align: center;
+    padding: 20px;
+}
+
+.documents_sshe {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra la sección "documents" en la página */
+}
+
+.documents_sshe div {
+    text-align: center;
+}
+
+.icon {
+    width: 50px; /* Ajusta según sea necesario */
+    height: auto;
+    border-radius: 30px;
+}
+h2 {
+    font-size: 18px;
+}
+h2:hover{
+    color: #0cbb89;
+}
+
+.intern {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+/*Footer*/
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+.section_footer {
+    display: flex;
+    width: auto;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para la primera sección con la imagen y el texto */
+.about-content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 12px;
+}
+
+.about-image img {
+    width: 80px; /* Ajusta según sea necesario */
+    height: auto;
+    margin-right: 20px; /* Ajusta según sea necesario */
+    border-radius: 20px;
+}
+
+.about-text h4 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para la segunda sección con los enlaces de redes sociales */
+.social-links a {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para el espacio entre los enlaces de redes sociales */
+.social-links a:not(:last-child) {
+    margin-right: 10px;
+}
+/* Estilos adicionales para hacerlo más dinámico */
+footer:hover {
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+footer a:hover {
+    color: #ff9900;
+    transition: color 0.3s ease;
+}
