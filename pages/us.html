@@ -8,50 +8,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="Colocar icono" /> <!-- Ingresar o crear un icono-->
+    <link rel="shortcut icon" href="Colocar icono"/> <!-- Ingresar o crear un icono-->
+    <script src="https://kit.fontawesome.com/91576135d4.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="medios/logo.png"/>
+    <!--Boostraps-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>SSHE Platform</title>
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <div class="log">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navpad">
+            <div class="container-fluid">
                 <!-- Logo -->
-                <img src="../medios/logo.png" alt="Logo">
-            </div>
-            <div class="nav_pages">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/h_and_r.html">Hazard and Risk</a></li>
-                    <li><a href="Contract_control.html">Contractor Control</a></li>
-                    <li><a href="../pages/us.html">Nosotros</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                </ul>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../medios/logo.png" alt="Logo">
+                </a>
+                <!-- Navbar Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="h_and_r.html">Hazard and Risk</a>
+                        <a class="nav-link" href="Contract_control.html">Contratistas</a>
+                        <a class="nav-link" href="us.html">Nosotros</a>
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
         </nav>
-    </header>
+    </header>  
     <main>
-        <h1>Nosotros</h1>
-        <p>Que es lo que hacemos? Te lo contamos</p>
+        <div class="container-us">
+            <h1>Quiénes Somos</h1>
+            <p>
+                En SSHE Platform, nos dedicamos a potenciar la seguridad y el bienestar laboral en compañías medianas y grandes a través de nuestra innovadora plataforma de control de contratistas. Nos comprometemos a proporcionar soluciones integrales que permitan a las empresas gestionar eficientemente los riesgos asociados a la seguridad e higiene laboral.
+            </p>
+            <h2>Misión</h2>
+            <p>
+                Nuestra misión es crear un entorno laboral seguro y saludable, impulsando la productividad y la confianza en cada proyecto. Con SSHE Platform, transformamos el cumplimiento normativo en una experiencia eficaz y colaborativa, facilitando a las organizaciones la toma de decisiones informadas para salvaguardar a su personal y proteger su valioso capital humano.
+            </p>
+            <h2>Visión</h2>
+            <p>
+                Ser líderes en la industria de la seguridad laboral, ofreciendo soluciones innovadoras que impulsen la prevención de riesgos y fomenten un entorno laboral seguro y saludable. Nos esforzamos por ser reconocidos como socios estratégicos de las empresas, contribuyendo al éxito sostenible de nuestros clientes y al bienestar de sus empleados.
+            </p>
+            <div class="image-container-us">
+                <h2>Staff</h2>
+                <img src="../medios/nosotros.png" alt="SSHE Platform" class="us-staff">
+                <p>Lic. Juan Ignacio Catalán</p>
+            </div>
+            
+        </div>
+    
     </main>
-    <footer>
-        <section>
-            <div>
-                <div>
-                    <img src="../medios/nosotros.png" alt="">
-                </div>
-                <div>
-                    <h4>Sobre Nosotros</h4>
-                    <p>Somos un equipo apasionado de profesionales que entiende la importancia de un entorno laboral seguro y saludable. Nuestra visión es transformar la forma en que las organizaciones abordan la seguridad, convirtiendo la conformidad normativa en una experiencia ágil y colaborativa.</p>
-                </div>
+        <footer>
+            <div class="section_footer">
+                <section class="about-section">
+                    <div class="about-content">
+                        <div class="about-image">
+                            <img src="../medios/nosotros.png" alt="Nosotros">
+                        </div>
+                        <div class="about-text">
+                            <h3>Sobre Nosotros</h3>
+                            <p>Somos un equipo apasionado de profesionales que entiende la importancia de un entorno laboral seguro y saludable. </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="social-section">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/juan-ignacio-catal%C3%A1n/" class="social-link" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" class="social-link"><i class="fas fa-times"></i></a>
+                    </div>
+                </section>
             </div>
-        </section>  
-        <section>
-            <div>
-                <a href="">Linkedin</a>
-                <a href="">Instagram</a>
-                <a href="">X</a>
-            </div>
-        </section>
-    </footer>
+        </footer>
+    <!--Boostraps-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -309,3 +309,41 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+/* US Page*/
+.container-us {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-us h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.image-container-us {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.image-container-us img {
+    /*max-width: 100%;*/
+    border-radius: 12px 0 12px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+
+}
