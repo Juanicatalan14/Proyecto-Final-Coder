@@ -8,80 +8,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="Colocar icono" /> <!-- Ingresar o crear un icono-->
+    <link rel="shortcut icon" href="Colocar icono"/> <!-- Ingresar o crear un icono-->
+    <script src="https://kit.fontawesome.com/91576135d4.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="medios/logo.png"/>
+    <!--Boostraps-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Script-->
+    <script src="../script.js"></script>
     <title>SSHE Platform</title>
 </head>
 <body>
     <!-- Navegador -->
     <header>
-        <nav class="nav">
-            <div class="log">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navpad">
+            <div class="container-fluid">
                 <!-- Logo -->
-                <img src="../medios/logo.png" alt="Logo">
-            </div>
-            <div class="nav_pages">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="h_and_r.html">Hazard and Risk</a></li>
-                    <li><a href="../pages/Contract_control.html">Contractor Control</a></li>
-                    <li><a href="../pages/us.html">Nosotros</a></li>
-                    <li><a href="../pages/Contact.html">Contact</a></li>
-                </ul>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../medios/logo.png" alt="Logo">
+                </a>
+                <!-- Navbar Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="h_and_r.html">Hazard and Risk</a>
+                        <a class="nav-link" href="Contract_control.html">Contratistas</a>
+                        <a class="nav-link" href="us.html">Nosotros</a>
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
         </nav>
-    </header>   
-    <hr>
-    <main>
-        <Section>
-
-            <h1>HAZARD AND RISK</h1>
+    </header>      
+    <main class="main-risk">
+        <div class="risk-matrix">
             <div>
-                <ul>
-                    <li>
-                        <a href="">Matriz de Riesgo</a>
-                    </li>
-                    <li>
-                        <a href="">Capacitaciones</a>
-                    </li>
-                    <li>
-                        <a href="">Sustentabilidad</a>
-                    </li>
-                </ul>
-            </div>
-        </Section>
-        <hr>
-        <section>
-
-            <div>
-                <h2>Matriz de Riesgo</h2>
+                <h1>Matriz de Riesgo</h1>
             </div>
             <div>
                 <form action="#">
                     <label for="Sites">Sitios</label>
-                    <select name="Sitios" id="Sites">
-                        <option value="Planta 1">Planta 1</option>
-                        <option value="Planta 2">Planta 2</option>
-                        <option value="Planta 3">Planta 3</option>
+                    <select name="Sitios" id="Sites" onchange="updateAreas()">
+                        <option value="Planta 1">Planta Salto</option>
+                        <option value="Planta 2">Planta Venado</option>
+                        
                     </select>
                 </form>
             </div>
             <div>
                 <form action="#">
                     <label for="Area">Área</label>
-                    <select name="Areas" id="Area">
-                        <option value="Area 1">Áreas 1</option>
-                        <option value="Area 2">Áreas 2</option>
-                        <option value="Area 3">Áreas 3</option>
+                    <select name="Areas" id="Area" onchange="updateTasks()">
                     </select>
                 </form>
             </div>
             <div>
                 <form action="#">
-                    <label for="Acivity">Tarea</label>
-                    <select name="Tarea" id="Activity">
-                        <option value="Tarea 1">Tarea 1</option>
-                        <option value="Tarea 2">Tarea 2</option>
-                        <option value="Tarea 3">Tarea 3</option>
+                    <label for="Activity">Tarea</label>
+                    <select name="Tarea" id="Activity" onchange="updateHazards()">
                     </select>
                 </form>
             </div>
@@ -89,34 +78,38 @@
                 <form action="#">
                     <label for="Hazard">Peligros</label>
                     <select name="Peligros" id="Hazard">
-                        <option value="Peligros 1">Tropiezos, resbalones y caidas</option>
+                        <option value="Peligros 1">Tropiezos, resbalones y caídas</option>
                         <option value="Peligros 2">Caida en Altura</option>
                         <option value="Peligros 3">Corte, Lastimaduras</option>
                     </select>
                 </form>
             </div>
-        </section>
-
-
+    
+            <script src="script.js"></script>
+        </div>
     </main>
     <footer>
-        <section>
-            <div>
-                <div>
-                    <img src="../medios/nosotros.png" alt="">
+        <div class="section_footer">
+            <section class="about-section">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="../medios/nosotros.png" alt="Nosotros">
+                    </div>
+                    <div class="about-text">
+                        <h3>Sobre Nosotros</h3>
+                        <p>Somos un equipo apasionado de profesionales que entiende la importancia de un entorno laboral seguro y saludable. </p>
+                    </div>
                 </div>
-                <div>
-                    <h4>Sobre Nosotros</h4>
-                    <p>Somos un equipo apasionado de profesionales que entiende la importancia de un entorno laboral seguro y saludable. Nuestra visión es transformar la forma en que las organizaciones abordan la seguridad, convirtiendo la conformidad normativa en una experiencia ágil y colaborativa.</p>
+            </section>
+            <section class="social-section">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/juan-ignacio-catal%C3%A1n/" class="social-link" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="social-link"><i class="fas fa-times"></i></a>
                 </div>
-            </div>
-        </section>  
-        <section>
-            <div>
-                <a href="">Linkedin</a>
-                <a href="">Instagram</a>
-                <a href="">X</a>
-            </div>
-        </section>
+            </section>
+        </div>
     </footer>
+    <!--Boostraps-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

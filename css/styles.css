@@ -274,6 +274,7 @@ footer a:hover {
     .h2_title {
         font-size: 13px;
     }
+    
 }
 
 /* PAGE CONTACTO*/
@@ -431,3 +432,44 @@ input[type="submit"]:hover {
 .feature p {
     color: #555;
 }
+
+/* Matriz */
+
+
+.risk-matrix {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+.risk-matrix h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    .risk-matrix {
+        width: 400px;
+    }
