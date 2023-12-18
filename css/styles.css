@@ -11,16 +11,13 @@ body{
 }
 /* Start Header*/
 header {
-    background-color: #949cb1;
-    width: auto;
-    height: 80px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    margin: 0;
+    padding: 0;
 }
-.log {
-    height: 80px;
-}
+
 header img {
     width: 80px;
     height: auto;
@@ -28,41 +25,49 @@ header img {
     padding: 0;
 }
 
-header nav {
+.container-fluid {
+    background-color: #949cb1;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 0;
     
 }
 
-    /* Puedes ajustar el espacio entre los elementos aquí */
-.nav_pages {  
-    margin-right: 20px;
+/* Navbar Styles */
+.navbar {
+    background-color: transparent;
 }
-header ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
+
+.navbar-nav{
+    margin: 0;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
     align-items: center;
-
+    justify-content: end;
 }
 
-header ul a {
-    text-decoration: none;
-    color: black;
+.navbar-nav a {
+    color: rgb(0, 0, 0); /* Cambia el color según tu necesidad */
     margin: 0 20px; /* Ajusta el margen entre los elementos <li> */
     font-size: 18px;
 }
 
-header ul a:hover {
-    color: #0cbb89;
+.navbar-nav a:hover {
+    color: #153d52;
+}
+
+.navbar-brand {
+    margin-right: auto;
 }
 
 /* End Header*/
 
 
 /* Start Main*/ 
+
 .main_section {
     display: flex;
     align-items: center;
@@ -98,7 +103,14 @@ header ul a:hover {
 .image-item:hover img {
     transform: scale(1.1);
 }
-
+/* carrousel */
+.carousel-and-text-container {
+    display: flex;
+    flex-direction: row-reverse; /* Cambia a row si quieres la imagen a la izquierda y texto a la derecha */
+}
+#carouselExample {
+    width: 50%;
+}
 /* Main Purpose */
 .main_purpose {
     flex: 1; /* Hace que ocupe todo el espacio disponible */
@@ -154,61 +166,68 @@ h2:hover{
     margin-top: 5px;
 }
 
-/*Footer*/
-
-
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 20px;
-}
-.section_footer {
-    display: flex;
-    width: auto;
+    text-align: center;
 }
 
-footer section {
+.section_footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Estilo para la primera sección con la imagen y el texto */
 .about-content {
     display: flex;
     align-items: center;
-    width: 50%;
-    font-size: 12px;
 }
 
 .about-image img {
-    width: 80px; /* Ajusta según sea necesario */
-    height: auto;
-    margin-right: 20px; /* Ajusta según sea necesario */
-    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-.about-text h4 {
+.about-text {
+    text-align: left;
+}
+
+.about-text h2 {
     margin-bottom: 10px;
 }
 
+
 /* Estilo para la segunda sección con los enlaces de redes sociales */
-.social-links a {
-    display: block;
-    margin-bottom: 5px;
-    color: white;
-    text-decoration: none;
+.social-links {
+    display: flex;
+    align-items: center;
 }
 
-/* Estilo para el espacio entre los enlaces de redes sociales */
-.social-links a:not(:last-child) {
-    margin-right: 10px;
+.social-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
 }
+
+.social-link i {
+    margin-right: 5px;
+}
+
 /* Estilos adicionales para hacerlo más dinámico */
 footer:hover {
     background-color: #444;
     transition: background-color 0.3s ease;
 }
+
 footer a:hover {
     color: #ff9900;
     transition: color 0.3s ease;

@@ -4,61 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con los navegadores más antiguos-->
-    <link rel="stylesheet" href="css/styles copy.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Colocar icono"/> <!-- Ingresar o crear un icono-->
     <script src="https://kit.fontawesome.com/91576135d4.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="medios/logo.png"/>
+    <!--Boostraps-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>SSHE Platform</title>
 </head>
 <body>
     <!-- Navegador -->
     <header>
-        <nav class="nav">
-            <div class="log">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
                 <!-- Logo -->
-                <img src="medios/logo.png" alt="Logo">
-            </div>
-            <div class="nav_pages">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/h_and_r.html">Hazard and Risk</a></li>
-                    <li><a href="pages/Contract_control.html">Contractor Control</a></li>
-                    <li><a href="pages/us.html">Nosotros</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
-                </ul>
+                <a class="navbar-brand" href="index copy.html">
+                    <img src="medios/logo.png" alt="Logo">
+                </a>
+                <!-- Navbar Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="pages/h_and_r.html">Hazard and Risk</a>
+                        <a class="nav-link" href="pages/Contract_control.html">Contratistas</a>
+                        <a class="nav-link" href="pages/us.html">Nosotros</a>
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
         </nav>
-    </header>   
+        
+    </header>     
     <!--Se muestra el trabajo que realiza o experiencia de la compañia-->
     <main>
         <section class="main_section">
-            <div class="main_background">
-                <div class="main_img" id="image_grid">
-                    <div class="image-item">
-                        <img src=".//medios/contratistas.jpeg" alt="contratistas" class="main_carrusel">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src=".//medios/contratistas.jpeg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="image-item">
-                        <img src=".//medios/contratista-1.jpeg" alt="contratistas-1" class="main_carrusel">
+                    <div class="carousel-item">
+                        <img src=".//medios/contratista-1.jpeg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="image-item">
-                        <img src=".//medios/contratista-2.jpeg" alt="contratistas-2" class="main_carrusel">
+                    <div class="carousel-item">
+                        <img src=".//medios/contratista-2.jpeg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="image-item">
-                        <img src=".//medios/contratista-3.jpeg" alt="contratistas-3" class="main_carrusel">
+                    <div class="carousel-item">
+                        <img src=".//medios/contratista-3.jpeg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="image-item">
-                        <img src=".//medios/contratista-4.jpeg" alt="contratistas-4" class="main_carrusel">
+                    <div class="carousel-item">
+                        <img src=".//medios/contratista-4.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <div class="main_purpose">
-                    <h1>Plataforma de Higiene y Seguridad</h1>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+            <div class="main_purpose">
+                <h1>Plataforma de Higiene y Seguridad</h1>
                     <p class="main_paragraph"><b>En SSHE Platform, nos dedicamos a potenciar la seguridad y el bienestar laboral en compañías medianas y grandes a través de nuestra innovadora plataforma de control de contratistas. Nos comprometemos a proporcionar soluciones integrales que permitan a las empresas gestionar eficientemente los riesgos asociados a la seguridad e higiene laboral. Nuestra misión es crear un entorno laboral seguro y saludable, impulsando la productividad y la confianza en cada proyecto. Con SSHE Platform, transformamos el cumplimiento normativo en una experiencia eficaz y colaborativa, facilitando a las organizaciones la toma de decisiones informadas para salvaguardar a su personal y proteger su valioso capital humano.</b>
-
                     </p>
-                </div>
             </div>
         </section>
         <!--Los documentos que maneja la pagina / los mismos deberian ir a documentos internos-->
@@ -108,7 +126,7 @@
                         <img src="medios/nosotros.png" alt="Nosotros">
                     </div>
                     <div class="about-text">
-                        <h4>Sobre Nosotros</h4>
+                        <h2>Sobre Nosotros</h2>
                         <p>Somos un equipo apasionado de profesionales que entiende la importancia de un entorno laboral seguro y saludable. Nuestra visión es transformar la forma en que las organizaciones abordan la seguridad, convirtiendo la conformidad normativa en una experiencia ágil y colaborativa.</p>
                     </div>
                 </div>
@@ -122,5 +140,7 @@
             </section>
         </div>
     </footer>
+    <!--Boostraps-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
