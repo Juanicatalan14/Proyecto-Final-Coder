@@ -30,14 +30,10 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    
+    padding: 0px;
 }
 
 /* Navbar Styles */
-.navbar {
-    background-color: transparent;
-}
 
 .navbar-nav{
     margin: 0;
@@ -48,7 +44,9 @@ header img {
     align-items: center;
     justify-content: end;
 }
-
+#navpad {
+    padding: 0;
+}
 .navbar-nav a {
     color: rgb(0, 0, 0); /* Cambia el color según tu necesidad */
     margin: 0 20px; /* Ajusta el margen entre los elementos <li> */
@@ -111,6 +109,9 @@ header img {
 #carouselExample {
     width: 50%;
 }
+.carousel-inner {
+    border-radius: 1%;
+}
 /* Main Purpose */
 .main_purpose {
     flex: 1; /* Hace que ocupe todo el espacio disponible */
@@ -121,18 +122,23 @@ header img {
 
 .main_purpose h1 {
     color: #333;
+    font-size: 1.8rem;
+    text-align: center;
 
 }
 
 .main_paragraph {
-    color: #555;
+    color: #333;
     line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+
 }
 
 /* Nueva sección "documents" */
 .documents {
     text-align: center;
-    padding: 20px;
+    padding: 2px;
 }
 
 .documents_sshe {
@@ -151,7 +157,7 @@ header img {
     height: auto;
     border-radius: 30px;
 }
-h2 {
+.h2_title {
     font-size: 18px;
 }
 h2:hover{
@@ -186,6 +192,8 @@ footer {
 .about-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .about-image img {
@@ -197,10 +205,12 @@ footer {
 
 .about-text {
     text-align: left;
+    font-size: 12px;
 }
 
-.about-text h2 {
+.about-text h3 {
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 
@@ -231,4 +241,34 @@ footer:hover {
 footer a:hover {
     color: #ff9900;
     transition: color 0.3s ease;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 500px){
+
+    .main_section {
+        flex-direction: column;
+    }
+    .main_paragraph {
+        font-size: 15px;
+    }
+    .main_purpose h1 {
+        font-size: 1.5rem;
+    }
+    .main_purpose{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .section_footer{
+        flex-direction: column;
+        align-items: end;
+    }
+    .documents_sshe {
+        justify-content: space-evenly;
+    }
+    .h2_title {
+        font-size: 13px;
+    }
 }
