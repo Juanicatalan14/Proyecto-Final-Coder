@@ -1,0 +1,46 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+
+    img{
+        width: 80px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .container-fluid{
+        background-color: $primary-bg-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+    .navbar-nav{
+        margin: 0;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: end;
+    }
+    #navpad {
+        padding: 0;
+    }
+    .navbar-nav a {
+        color: rgb(0, 0, 0); /* Cambia el color según tu necesidad */
+        margin: 0 20px; /* Ajusta el margen entre los elementos <li> */
+        font-size: 18px;
+    }
+    
+    .navbar-nav a:hover {
+        color: $main-link-color;
+    }
+    
+    .navbar-brand {
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*background-color: #e0e9ee ;*/
+}
+
+body {
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}
+header img {
+  width: 80px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+header .container-fluid {
+  background-color: #949cb1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+header .navbar-nav {
+  margin: 0;
+}
+header .navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: end;
+}
+header #navpad {
+  padding: 0;
+}
+header .navbar-nav a {
+  color: rgb(0, 0, 0); /* Cambia el color según tu necesidad */
+  margin: 0 20px; /* Ajusta el margen entre los elementos <li> */
+  font-size: 18px;
+}
+header .navbar-nav a:hover {
+  color: #153d52;
+}
+header .navbar-brand {
+  margin-right: auto;
+}/*# sourceMappingURL=estilo.css.map */
