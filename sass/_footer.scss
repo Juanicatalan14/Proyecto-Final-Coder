@@ -1,6 +1,6 @@
 footer {
     background-color: $main-text-color;
-    color: #fff;
+    color: $classic-line-color;
     padding: 20px;
     text-align: center;
 
@@ -47,7 +47,7 @@ footer {
         .social-link {
             display: flex;
             align-items: center;
-            color: #fff;
+            color: $classic-line-color;
             text-decoration: none;
             margin-right: 20px;
 

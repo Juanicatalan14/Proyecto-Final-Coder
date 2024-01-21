@@ -125,6 +125,14 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para el contenido */
+    grid-template-rows: auto auto auto; /* Tres filas para h1, p, y .image-container-us */
+    grid-template-areas:
+        "header"
+        "paragraph"
+        "images";
+
     h1,
     h2 {
         color: $bg-color;
