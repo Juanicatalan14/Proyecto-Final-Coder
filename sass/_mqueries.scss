@@ -1,6 +1,20 @@
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 500px) {
+    
+    header {
+        .navbar-nav a {
+            padding-bottom: 2px; /* Reduce la distancia entre el texto y la línea para pantallas más pequeñas */
+        }
+    
+        .navbar-nav a:hover::after {
+            bottom: 1px; /* Ajusta la posición vertical para pantallas más pequeñas */
+            width: 30%;
+            left: 0;
+            transform: none;
+        }
+    }
+    
     main {
         .main_section {
             flex-direction: column;
@@ -24,14 +38,14 @@
         align-items: end;
     }
 
-        .documents_sshe {
-            justify-content: space-evenly;
-        }
-
-        .h2_title {
-            font-size: 13px;
-        }
+    .documents_sshe {
+        justify-content: space-evenly;
     }
+
+    .h2_title {
+        font-size: 13px;
+    }
+}
 
 /* PAGE CONTACTO*/
 
