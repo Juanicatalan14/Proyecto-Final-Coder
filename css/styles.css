@@ -76,17 +76,17 @@ header img {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+/*
 .main_background {
     background-color: #f4f4f4;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    display: flex; /* Agregamos flex para controlar los elementos internos */
+    display: flex; /* Agregamos flex para controlar los elementos internos 
 }
-
-.main_img {
-    flex: 1; /* Hace que ocupe todo el espacio disponible */
+*/
+/*.main_img {
+    flex: 1; /* Hace que ocupe todo el espacio disponible 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;

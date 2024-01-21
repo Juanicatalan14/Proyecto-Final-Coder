@@ -1,0 +1,69 @@
+footer {
+    background-color: $main-text-color;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    .section_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Estilo para la primera sección con la imagen y el texto */
+        .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .about-image {
+            img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+            }
+        }
+
+        .about-text {
+            text-align: left;
+            font-size: 12px;
+
+            h3 {
+            margin-bottom: 10px;
+            font-size: 15px;
+            }
+        }
+        }
+
+    /* Estilo para la segunda sección con los enlaces de redes sociales */
+    .social-links {
+        display: flex;
+        align-items: center;
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+
+            i {
+            margin-right: 5px;
+            }
+        }
+        
+        a:hover {
+            color: $footer-link-hover-color;
+            transition: color 0.3s ease;
+            }
+    }
+        /* Estilos adicionales para hacerlo más dinámico */
+    &:hover {
+        background-color: $footer-hover-bg-color;
+        transition: background-color 0.3s ease;
+        }
+    }

@@ -1,0 +1,83 @@
+/* Start Main */
+    .main_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* carrousel */
+        #carouselExample {
+        width: 50%;
+        }
+        .carousel-inner {
+            border-radius: 1%;
+        }
+        .carousel-and-text-container {
+            display: flex;
+            flex-direction: row-reverse; /* Cambia a row si quieres la imagen a la izquierda y texto a la derecha */
+        }
+    }
+    /* Main Purpose */
+    .main_purpose {
+        flex: 1; /* Hace que ocupe todo el espacio disponible */
+        max-width: 50%; /* ajusta según tus necesidades */
+        margin-left: 20px; /* Ajusta el espacio entre las dos secciones */
+
+        h1 {
+        color: $main-text-color;
+        font-size: 1.8rem;
+        text-align: center;
+        }
+
+        .main_paragraph {
+        color:$main-text-color;
+        line-height: 1.6;
+        font-size: 1rem;
+        text-align: justify;
+        }
+    }
+     /* Nueva sección "documents" */
+
+    .documents {
+        text-align: center;
+        padding: 2px;
+
+        .documents_sshe {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+        }
+
+        .documents_sshe div {
+        text-align: center;
+
+        .icon {
+            width: 50px;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .h2_title {
+            font-size: 18px;
+        }
+
+        h2:hover {
+            color: #0cbb89;
+        }
+
+        .intern {
+            text-decoration: none;
+            color: $main-text-color;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+        }
+    }
+
+
