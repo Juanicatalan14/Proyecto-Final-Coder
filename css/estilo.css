@@ -186,4 +186,35 @@ footer:hover {
   font-weight: bold;
   display: block;
   margin-top: 5px;
+}
+
+/*CONTACT PAGE*/
+.container-contact {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-contact label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.container-contact input, .container-contact textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.container-contact input[type=submit] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+.container-contact input[type=submit]:hover {
+  background-color: #45a049;
 }/*# sourceMappingURL=estilo.css.map */

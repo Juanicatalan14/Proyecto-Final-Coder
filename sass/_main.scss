@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: space-between;
         margin: 20px;
-        background-color: #fff;
+        background-color: $classic-line-color;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -79,5 +79,40 @@
         }
         }
     }
+
+/*CONTACT PAGE*/
+.container-contact {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: $classic-line-color;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    input,textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: $submit-button-bg-color;
+        color: $classic-line-color;
+        cursor: pointer;
+
+        &:hover {
+        background-color:$submit-button-hover-bg-color;
+        }
+    }
+}
 
 
