@@ -250,4 +250,104 @@ footer:hover {
   border-radius: 12px 0 12px 0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   width: 200px;
+}
+
+/* Control de Contratista */
+.container-control {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.container-control .image-container {
+  text-align: center;
+  color: #333;
+}
+.container-control h1, .container-control h2 {
+  font-size: 1.8rem;
+}
+.container-control h2 {
+  font-size: 1.4rem;
+}
+.container-control p {
+  text-align: justify;
+}
+.container-control .button-argentina {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #346497;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.container-control .button-argentina:hover {
+  background-color: #0056b3;
+}
+.container-control .button-argentina {
+  text-decoration: none;
+}
+
+.form-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.form-container a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.feature-container .feature {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+.feature-container .feature h4 {
+  color: #007bff;
+}
+.feature-container .feature p {
+  color: #555;
+}
+
+/* Matriz */
+.risk-matrix {
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.risk-matrix h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.risk-matrix form {
+  margin-top: 10px;
+}
+.risk-matrix label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+.risk-matrix select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }/*# sourceMappingURL=estilo.css.map */

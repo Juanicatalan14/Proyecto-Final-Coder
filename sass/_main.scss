@@ -153,3 +153,119 @@
     }
 }
 
+/* Control de Contratista */
+
+.container-control {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $classic-line-color;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+
+    .image-container {
+        text-align: center;
+        color: #333;
+    }
+
+    h1,h2 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .button-argentina {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #346497;
+        color: $classic-line-color;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+
+    .button-argentina {
+        text-decoration: none;
+    }
+}
+
+.form-container {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    }
+
+    .feature-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .feature {
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+            background-color: $classic-line-color;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+
+        h4 {
+            color: #007bff;
+        }
+
+        p {
+            color: $us-page-text-color;
+        }
+    }
+}
+
+/* Matriz */
+
+.risk-matrix {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: $classic-line-color;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: $main-text-color;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}
