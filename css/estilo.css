@@ -101,7 +101,7 @@ footer .about-content .about-text {
   text-align: left;
   font-size: 12px;
 }
-footer .about-content .about-text h3 {
+footer .about-content .about-text h2, footer .about-content .about-text h3 {
   margin-bottom: 10px;
   font-size: 15px;
 }
