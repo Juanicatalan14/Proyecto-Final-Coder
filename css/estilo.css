@@ -25,7 +25,7 @@ header img {
   padding: 0;
 }
 header .container-fluid {
-  background-color: #949cb1;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 160, 187) 0%, rgba(0, 188, 219, 0.9) 90%);
   display: flex;
   justify-content: space-between;
   align-items: center;
