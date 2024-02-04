@@ -384,6 +384,9 @@ footer:hover {
   main .main_section {
     flex-direction: column;
   }
+  main .main_section #carouselExample {
+    width: 100%;
+  }
   main .main_paragraph {
     font-size: 15px;
   }
